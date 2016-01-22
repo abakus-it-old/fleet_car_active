@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="fleet_vehicule_status">
+            <field name="name">fleet.vehicule.status</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_form"/>
+            <field name="arch" type="xml">
+                <!-- Active -->
+                <field name="car_value" position="after">
+                    <field name="active"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
